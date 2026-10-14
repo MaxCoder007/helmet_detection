@@ -1,0 +1,41 @@
+@'
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.log
+*.cache
+
+# Dataset images: keep dataset configuration and documentation
+Helmet-&-Number-Plate-Detection-2-1/train/images/
+Helmet-&-Number-Plate-Detection-2-1/valid/images/
+Helmet-&-Number-Plate-Detection-2-1/test/images/
+
+Helmet-NumberPlate-Merged/train/images/
+Helmet-NumberPlate-Merged/valid/images/
+Helmet-NumberPlate-Merged/test/images/
+
+# Model weights and exported models
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Training outputs: keep the directory structure, not generated files
+runs/**
+
+# Generated error-analysis images
+error_analysis/val_sample/*
+error_analysis/high_conf_FP/*
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+Thumbs.db
+.DS_Store
+'@ | Set-Content -Encoding utf8 .gitignore
